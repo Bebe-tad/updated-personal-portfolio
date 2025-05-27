@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Betelhem Tadegegn | Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+           
+
+            <div class="container">
+           <div class="logo">
+    <canvas id="logo-canvas" width="50" height="50"></canvas>
+    <span>Betelhem Tadegegn</span>
+</div>
+                 
+             <div class="menu-icon" id="menu-icon">&#9776;</div>
+               <div class="nav-menu" id="nav-menu">
+                  <div class="nav-link"> </div>
+                   
+                    <a href="index.html" >Home</a>
+                    <a href="about.html" >About</a>
+                    <a href="skills.html" >Skills</a>
+                    <a href="projects.html" >Projects</a>
+                    <a href="contact.html" >Contact</a>
+             
+            
+              </div>
+              </div>
+              </div>
+            </nav>
+        
+    </header>
+
+    <div class="intro" id="home">
+        <div class="container">
+            <div class="intro-content">
+                <div class="intro-text">
+                    <h1> I'm Frontend  <span>Developer</span> And GUI designer </h1>
+                    <p id="typing-text"> Hey,My Name Is <strong>BETELHEM TADEGEGN</strong>.</p>
+
+                </div>
+                <div class="intro-image">
+<img src="./images/be6.jpg" alt="home">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Betelhem Tadegegn. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+  const text = "I'm a computer science student. Passionate about building clean, user-friendly experiences and solving real-world problems with code.";
+  const typingElement = document.getElementById("typing-text");
+  let i = 0;
+
+  function typeWriter() {
+    if (i < text.length) {
+      typingElement.innerHTML += text.charAt(i);
+      i++;
+      setTimeout(typeWriter, 50); 
+    }
+  }
+
+  window.onload = typeWriter;
+</script>
+
+
+ <script src="navbar.js"></script>
+<script src="logoscript.js"></script>
+
+
+</body>
+</html>
